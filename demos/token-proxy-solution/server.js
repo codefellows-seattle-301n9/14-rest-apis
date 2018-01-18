@@ -9,12 +9,10 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 
 // WARNING: if running locally node/nodemon must be run from SAME terminal tab where token exported
 
-console.log('process.env', process.env)
 app.use(express.static('./public'))
 
 
 app.get('/github/*', (req, res) => {
-    console.log('token', GITHUB_TOKEN)
     console.log('Routing a GitHub AJAX request for ', req.params[0]);
     const url = `https://api.github.com/${req.params[0]}`;
     superagent.get(url)
