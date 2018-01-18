@@ -4,7 +4,7 @@ const superagent = require('superagent')
 const PORT = process.env.PORT || 3000
 
 // export token as an environment variable
-// 7ab4781d407be69eefc593b7b8487eaacd426449
+// 566d51369e5732ea9c7f9ab587d5d20ef3858ae2
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN
 
 // WARNING: if running locally node/nodemon must be run from SAME terminal tab where token exported
